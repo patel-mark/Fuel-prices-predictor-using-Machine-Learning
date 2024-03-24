@@ -25,8 +25,8 @@ def predict_super_petrol(mean_exchange_rate, crude_oil_prices_usd_per_barrel, cr
 st.title('Super Petrol Price Predictor')
 
 mean_exchange_rate_input = st.number_input('Enter Mean Exchange Rate')
-crude_oil_prices_usd_per_barrel_input=('Enter Crude Oil Price in ($/Barrel)')
-crude_oil_prices_kes_per_litre_input = st.number_input('Enter Crude Oil Price  in (KES/Litre)')
+crude_oil_prices_usd_per_barrel_input=st.number_input('Enter Crude Oil Price in USD ($/Barrel)')
+crude_oil_prices_kes_per_litre_input = st.number_input('Enter Crude Oil Price  in Shillings (KES/Litre)')
 
 if st.button('Predict'):
     predicted_super_petrol_value = predict_super_petrol(mean_exchange_rate_input, crude_oil_prices_usd_per_barrel_input,crude_oil_prices_kes_per_litre_input)
