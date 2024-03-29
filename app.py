@@ -27,14 +27,7 @@ def predict_super_petrol(mean_exchange_rate, crude_oil_prices_usd_per_barrel, cr
 st.title('Super Petrol Price Predictor Using Machine Lerning.')
 
 image_url = "https://images.squarespace-cdn.com/content/v1/5acf87facc8fedbe1a9c205b/1523632453714-FACRKR4F8SRQD400SQRG/Lexo+Energy+petrol+fuel+station+Kenya+technology+3.jpg"
-st.image(image_url, caption='Your Image Caption', use_column_width=True)
-
-# Page title
-#st.set_page_config(page_title="Mark Patel", page_icon=Image.open('Image.jpg'),initial_sidebar_state="expanded")
-
-# Add profile image
-#profile_image = Image.open("")
-#st.sidebar.image(profile_image, use_column_width=True)
+st.image(image_url, caption='Your Image Caption', use_column_width=True) 
 
 # Add contact information
 st.sidebar.title("Mark Patel")
@@ -47,11 +40,12 @@ st.sidebar.subheader("[GitHub](https://github.com/patel-mark)")
 #Skills
 st.sidebar.header("Skills")
 st.sidebar.write("Here are some of my top skills:")
+st.sidebar.write("- Machine learning")
+st.sidebar.write("- Data analysis and visualization")
 st.sidebar.write("- Python programming")
 st.sidebar.write("- SQL")
-st.sidebar.write("- Data analysis and visualization")
 st.sidebar.write("- Feature Engineering & Feature Selection")
-st.sidebar.write("- Machine learning")
+
 
 mean_exchange_rate_input = st.number_input('Enter Mean Exchange Rate')
 crude_oil_prices_usd_per_barrel_input=st.number_input('Enter Crude Oil Price in USD ($/Barrel)')
