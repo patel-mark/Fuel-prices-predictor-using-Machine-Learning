@@ -24,10 +24,37 @@ def predict_super_petrol(mean_exchange_rate, crude_oil_prices_usd_per_barrel, cr
     return predicted_super_petrol[0]
 
 # Create the Streamlit app
-st.title('Super Petrol Price Predictor Using Machine Lerning.')
+
+
+#title
+st.markdown("<h1 style='text-align: center;'>Super Petrol Price Predictor Using Machine Learning</h1>", unsafe_allow_html=True)
 
 image_url = "https://images.squarespace-cdn.com/content/v1/5acf87facc8fedbe1a9c205b/1523632453714-FACRKR4F8SRQD400SQRG/Lexo+Energy+petrol+fuel+station+Kenya+technology+3.jpg"
-st.image(image_url, caption='Your Image Caption', use_column_width=True) 
+
+# Display the image with reduced height using CSS styling
+st.markdown(
+    f'<img src="{image_url}" alt="Your Image Caption" style="height: 300px; width: 100%;">',
+    unsafe_allow_html=True,
+)
+
+#About the project
+st.markdown("""
+   Extreme fluctuations and inconsistencies in fuel prices in Kenya for the past five years have raised eyebrows among consumers. 
+   
+   In this project, I take a look at the trends and patterns in fuel pricing to come up with a machine-learning model that will aid in predicting future prices. 
+   
+   Using fuel data from 2010 to 2023, I analyzed trends and patterns and then created a visual to drive insights from the data using Excel.
+    
+   I created a machine learning model that takes in three input parameters: 
+   1. Average mean exchange rate.
+   2. Average crude oil price in USD per barrel. 
+   3. Average crude oil price in Kenyan shillings per liter. 
+        
+   By using these inputs, this model will be able to predict future fuel prices and in particular Super petrol. 
+   
+   This project aims to create a more transparent fuel pricing system for consumers and all stakeholders that can help inform their future decisions creating a fair and stable fuel market.
+""")
+
 
 # Add contact information
 st.sidebar.title("Mark Patel")
