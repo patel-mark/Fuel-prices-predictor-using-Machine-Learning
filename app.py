@@ -23,11 +23,10 @@ def predict_super_petrol(mean_exchange_rate, crude_oil_prices_usd_per_barrel, cr
 
     return predicted_super_petrol[0]
 
+
 # Create the Streamlit app
-
-
 #title
-st.markdown("<h1 style='text-align: center;'>Super Petrol Price Predictor Using Machine Learning</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: darkturquoise;'>Predictive Pricing Model for the Kenyan Fuel Market</h1>", unsafe_allow_html=True)
 
 #pump image
 image_url = "https://images.squarespace-cdn.com/content/v1/5acf87facc8fedbe1a9c205b/1523632453714-FACRKR4F8SRQD400SQRG/Lexo+Energy+petrol+fuel+station+Kenya+technology+3.jpg"
@@ -56,7 +55,7 @@ st.markdown("""
 """)
 
 #Excell visualization chart.
-st.markdown("<h3 style='text-align: center;'>Analysis of Oil Price Trends and Economic Impact in Kenya (2010 - 2023)</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: darkturquoise'>Analysis of Oil Price Trends and Economic Impact in Kenya (2010 - 2023)</h3>", unsafe_allow_html=True)
 
 image2=image_url="https://raw.githubusercontent.com/patel-mark/Fuel-prices-predictor-using-Machine-Learning/main/viz%20p.webp"
 st.markdown(
@@ -65,7 +64,7 @@ st.markdown(
 )
 
 #model title
-st.markdown("<h3 style='text-align: center;'>Super Petrol Price Predictor</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: darkturquoise'>Super Petrol machine learning Price Predictor</h3>", unsafe_allow_html=True)
 
 # Add contact information
 st.sidebar.title("Mark Patel")
