@@ -29,9 +29,9 @@ def predict_super_petrol(mean_exchange_rate, crude_oil_prices_usd_per_barrel, cr
 #title
 st.markdown("<h1 style='text-align: center;'>Super Petrol Price Predictor Using Machine Learning</h1>", unsafe_allow_html=True)
 
+#pump image
 image_url = "https://images.squarespace-cdn.com/content/v1/5acf87facc8fedbe1a9c205b/1523632453714-FACRKR4F8SRQD400SQRG/Lexo+Energy+petrol+fuel+station+Kenya+technology+3.jpg"
 
-# Display the image with reduced height using CSS styling
 st.markdown(
     f'<img src="{image_url}" alt="Your Image Caption" style="height: 300px; width: 100%;">',
     unsafe_allow_html=True,
@@ -55,6 +55,17 @@ st.markdown("""
    This project aims to create a more transparent fuel pricing system for consumers and all stakeholders that can help inform their future decisions creating a fair and stable fuel market.
 """)
 
+#Excell visualization chart.
+st.markdown("<h3 style='text-align: center;'>Analysis of Oil Price Trends and Economic Impact in Kenya (2010 - 2023)</h3>", unsafe_allow_html=True)
+
+image2=image_url="https://raw.githubusercontent.com/patel-mark/Fuel-prices-predictor-using-Machine-Learning/main/viz%20p.webp"
+st.markdown(
+    f'<img src="{image2}" alt="Your Image Caption" style="height: 100%; width: 100%;">',
+    unsafe_allow_html=True,
+)
+
+#model title
+st.markdown("<h3 style='text-align: center;'>Super Petrol Price Predictor</h3>", unsafe_allow_html=True)
 
 # Add contact information
 st.sidebar.title("Mark Patel")
