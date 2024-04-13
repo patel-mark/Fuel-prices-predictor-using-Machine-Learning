@@ -2,6 +2,7 @@ import pickle
 import streamlit as st
 import requests
 from PIL import Image
+import sklearn
 from sklearn.preprocessing import StandardScaler
 
 # Load the model and scaler
