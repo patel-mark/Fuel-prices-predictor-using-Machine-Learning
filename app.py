@@ -32,7 +32,7 @@ st.markdown("<h1 style='text-align: center; color: darkturquoise;'>Predictive Pr
 image_url = "https://images.squarespace-cdn.com/content/v1/5acf87facc8fedbe1a9c205b/1523632453714-FACRKR4F8SRQD400SQRG/Lexo+Energy+petrol+fuel+station+Kenya+technology+3.jpg"
 
 st.markdown(
-    f'<img src="{image_url}" alt="Your Image Caption" style="height: 300px; width: 100%;">',
+    f'<img src="{image_url}" style="height: 300px; width: 100%;">',
     unsafe_allow_html=True,
 )
 
