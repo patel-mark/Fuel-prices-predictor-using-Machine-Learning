@@ -2,10 +2,6 @@ Pillow==10.3.0
 Requests==2.31.0
 scikit_learn==1.4.2
 streamlit==1.31.1
-<<<<<<< HEAD
-pickle5
-=======
 pickle5
 pandas==1.5.3
 numpy==1.24.2
->>>>>>> 827f12b1dd052bd1fe03b5ce8888c2da876a1ac7
