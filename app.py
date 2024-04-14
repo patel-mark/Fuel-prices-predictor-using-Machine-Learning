@@ -85,10 +85,11 @@ st.sidebar.write("- SQL")
 st.sidebar.write("- Feature Engineering & Feature Selection")
 
 
-mean_exchange_rate_input = st.number_input('Enter Mean Exchange Rate')
-crude_oil_prices_usd_per_barrel_input=st.number_input('Enter Crude Oil Price in USD ($/Barrel)')
-crude_oil_prices_kes_per_litre_input = st.number_input('Enter Crude Oil Price  in Shillings (KES/Litre)')
+mean_exchange_rate_input = st.number_input('Enter Mean Exchange Rate', min_value=0.0)
+crude_oil_prices_usd_per_barrel_input = st.number_input('Enter Crude Oil Price in USD ($/Barrel)', min_value=0.0)
+crude_oil_prices_kes_per_litre_input = st.number_input('Enter Crude Oil Price in Shillings (KES/Litre)', min_value=0.0)
 
 if st.button('Predict'):
-    predicted_super_petrol_value = predict_super_petrol(mean_exchange_rate_input, crude_oil_prices_usd_per_barrel_input,crude_oil_prices_kes_per_litre_input)
+    predicted_super_petrol_value = predict_super_petrol(mean_exchange_rate_input, crude_oil_prices_usd_per_barrel_input, crude_oil_prices_kes_per_litre_input)
     st.success(f'Predicted Super Petrol (KES/Litre): {predicted_super_petrol_value:.2f}')
+
