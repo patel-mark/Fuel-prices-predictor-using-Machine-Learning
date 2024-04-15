@@ -81,6 +81,8 @@ st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=
 st.markdown("<h3 style='text-align: center; color: darkturquoise'>Super Petrol machine learning Price Predictor</h3>", unsafe_allow_html=True)
 
 # Add contact information
+# Colorful divider
+st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
 st.sidebar.title("Mark Patel")
 st.sidebar.write("Data Scientist")
 st.sidebar.write("You can reach me at:")
@@ -90,6 +92,8 @@ st.sidebar.subheader("[GitHub](https://github.com/patel-mark)")
 
 #Skills
 st.sidebar.header("Skills")
+# Colorful divider
+st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
 st.sidebar.write("Here are some of my top skills:")
 st.sidebar.write("- Machine learning")
 st.sidebar.write("- Data analysis and visualization")
