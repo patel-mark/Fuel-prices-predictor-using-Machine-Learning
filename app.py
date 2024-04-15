@@ -26,8 +26,15 @@ def predict_super_petrol(mean_exchange_rate, crude_oil_prices_usd_per_barrel, cr
 
 
 # Create the Streamlit app
+
+# Page title
+st.set_page_config(page_title="Mark Patel")
+
 #title
 st.markdown("<h1 style='text-align: center; color: darkturquoise;'>Predictive Pricing Model for the Kenyan Fuel Market</h1>", unsafe_allow_html=True)
+
+# Colorful divider
+st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
 
 #pump image
 image_url = "https://images.squarespace-cdn.com/content/v1/5acf87facc8fedbe1a9c205b/1523632453714-FACRKR4F8SRQD400SQRG/Lexo+Energy+petrol+fuel+station+Kenya+technology+3.jpg"
@@ -54,6 +61,9 @@ st.markdown("""
    
    This project aims to create a more transparent fuel pricing system for consumers and all stakeholders that can help inform their future decisions creating a fair and stable fuel market.
 """)
+
+# Colorful divider
+st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
 
 #Excell visualization chart.
 st.markdown("<h3 style='text-align: center; color: darkturquoise'>Analysis of Oil Price Trends and Economic Impact in Kenya (2010 - 2023)</h3>", unsafe_allow_html=True)
@@ -84,6 +94,8 @@ st.sidebar.write("- Python programming")
 st.sidebar.write("- SQL")
 st.sidebar.write("- Feature Engineering & Feature Selection")
 
+# Colorful divider
+st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
 
 mean_exchange_rate_input = st.number_input('Enter Mean Exchange Rate', min_value=0.0)
 crude_oil_prices_usd_per_barrel_input = st.number_input('Enter Crude Oil Price in USD ($/Barrel)', min_value=0.0)
