@@ -74,6 +74,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Colorful divider
+st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
+
 #model title
 st.markdown("<h3 style='text-align: center; color: darkturquoise'>Super Petrol machine learning Price Predictor</h3>", unsafe_allow_html=True)
 
@@ -94,8 +97,6 @@ st.sidebar.write("- Python programming")
 st.sidebar.write("- SQL")
 st.sidebar.write("- Feature Engineering & Feature Selection")
 
-# Colorful divider
-st.markdown("""<hr style="border-top: 3px solid orange;">""", unsafe_allow_html=True)
 
 mean_exchange_rate_input = st.number_input('Enter Mean Exchange Rate', min_value=0.0)
 crude_oil_prices_usd_per_barrel_input = st.number_input('Enter Crude Oil Price in USD ($/Barrel)', min_value=0.0)
